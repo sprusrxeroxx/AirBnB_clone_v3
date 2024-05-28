@@ -89,6 +89,9 @@ class DBStorage:
         """Count the number of objects in storage"""
         if not cls:
             return len(self.all())
+        for cls, value in classes.items():
+            if cls == cls or value == cls:
+                return len(self.all(cls))
         if cls in classes.values():
             return len(self.all(cls))
         return
