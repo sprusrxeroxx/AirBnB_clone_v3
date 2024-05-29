@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Creates state view routes
+Creates amenities view routes
 """
 
 from flask import jsonify, request, abort
